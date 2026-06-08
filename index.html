@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIA – Pakistan International Airlines</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <!-- LOGO -->
+        <div class="navbar__logo">
+          <img
+            src="icons/pia-logo.svg"
+            alt="PIA Logo"
+            class="navbar__logo-img"
+          />
+        </div>
+
+        <!-- LINKS -->
+        <nav>
+          <ul class="navbar__links" id="navLinks">
+            <li><a href="#" class="navbar__link">Where we Fly</a></li>
+            <li><a href="#" class="navbar__link">Experience</a></li>
+            <li><a href="#" class="navbar__link">Awards+Plus</a></li>
+            <li><a href="#" class="navbar__link">Deals</a></li>
+            <li><a href="#" class="navbar__link">Corporate Websites</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar__actions">
+          <!-- SEARCH ICON -->
+          <a href="#" class="navbar__search-btn" aria-label="Search">
+            <img src="icons/search-icon.png" alt="Search" />
+          </a>
+          <!-- LOGIN -->
+          <a href="#" class="navbar__login">Awards+Login</a>
+        </div>
+
+        <!-- HAMBURGER -->
+        <button
+          class="navbar__hamburger"
+          id="menuToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================================
+         HERO + BOOKING FORM
+    ============================================================ -->
+    <section class="hero">
+      <div class="hero__content">
+        <img
+          class="hero__image"
+          src="images/hero-bg.jpg"
+          alt="PIA Highlight Banner"
+        />
+      </div>
+    </section>
+
+    <div class="hero__form-wrapper">
+      <div class="form__tabbar">
+        <button class="form__tabbar-btn form__tabbar-btn--active">
+          ✈️ Flight
+        </button>
+        <button class="form__tabbar-btn">🖥 Web Check-In</button>
+        <button class="form__tabbar-btn">🎫 My Booking</button>
+        <button class="form__tabbar-btn">🕐 Flight Status</button>
+        <button class="form__tabbar-btn">📅 Schedules</button>
+      </div>
+
+      <div class="form__body">
+        <div class="form__radio-row">
+          <div class="form__radio-group">
+            <label class="form__radio-label">
+              <input type="radio" name="trip" class="form__radio" />
+              <span class="form__radio-custom"></span>
+              Oneway
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="trip" class="form__radio" checked />
+              <span class="form__radio-custom"></span>
+              Roundtrip
+            </label>
+            <label class="form__radio-label">
+              <input type="radio" name="trip" class="form__radio" />
+              <span class="form__radio-custom"></span>
+              Multicity
+            </label>
+          </div>
+
+          <div class="form__toggle-group">
+            <label class="form__toggle">
+              <input type="checkbox" class="form__toggle-input" />
+              <span class="form__toggle-slider"></span>
+            </label>
+            <span class="form__toggle-label">Buy a ticket with A+ Points</span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__group form__group--from">
+            <select class="form__input form__select">
+              <option selected disabled>From</option>
+              <option>Karachi (KHI)</option>
+              <option>Lahore (LHE)</option>
+              <option>Islamabad (ISB)</option>
+            </select>
+          </div>
+
+          <button class="form__swap" type="button">⇌</button>
+
+          <div class="form__group form__group--to">
+            <select class="form__input form__select">
+              <option selected disabled>To</option>
+              <option>Dubai (DXB)</option>
+              <option>London (LHR)</option>
+              <option>Toronto (YYZ)</option>
+            </select>
+          </div>
+
+          <div class="form__group form__group--date">
+            <div class="form__date-box">
+              <span class="form__date-placeholder">Departure Date</span>
+              <span class="form__date-icon">📅</span>
+              <input type="date" class="form__date-input" />
+            </div>
+          </div>
+
+          <div class="form__group form__group--date">
+            <div class="form__date-box">
+              <span class="form__date-placeholder">Return Date</span>
+              <span class="form__date-icon">📅</span>
+              <input type="date" class="form__date-input" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form__row form__row--bottom">
+          <div class="form__group form__group--passengers">
+            <div class="form__input form__passengers-box">1 Adult</div>
+          </div>
+
+          <div class="form__group form__group--class">
+            <select class="form__input form__select">
+              <option>ALL</option>
+              <option>Economy</option>
+              <option>Business</option>
+            </select>
+          </div>
+
+          <div class="form__group form__group--currency">
+            <select class="form__input form__select">
+              <option>PKR</option>
+              <option>USD</option>
+              <option>GBP</option>
+            </select>
+          </div>
+
+          <button class="form__search-btn" type="button">🔍</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION — 5 HEADINGS + IMAGE
+    ============================================================ -->
+    <section class="highlight-section">
+      <div class="highlight-wrapper">
+        <div class="highlight-top">
+          <div class="highlight-item">Charter Flight</div>
+          <div class="highlight-item">Online Discount</div>
+          <div class="highlight-item">Web and Mobile Check in</div>
+          <div class="highlight-item">Call n Fly</div>
+          <div class="highlight-item">Nusuk</div>
+        </div>
+        <div class="highlight-image">
+          <img src="images/call and fly 2.jpg" alt="PIA Highlight Banner" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION — OUR SERVICES (4 cards)
+    ============================================================ -->
+    <section class="info-section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">OUR SERVICES</h1>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card__img-wrapper">
+              <img
+                src="images/info-1.png"
+                alt="Pre-book Meal"
+                class="info-card__img"
+              />
+            </div>
+            <h3 class="info-card__title">Pre-book Meal</h3>
+            <p class="info-card__text">
+              Indulge in anticipation with our Pre-booked Meals – a culinary
+              journey designed to elevate your dining experience, ensuring a
+              delightful feast awaits you at your destination.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__img-wrapper">
+              <img
+                src="images/info-2.png"
+                alt="Seat Selection"
+                class="info-card__img"
+              />
+            </div>
+            <h3 class="info-card__title">Seat Selection</h3>
+            <p class="info-card__text">
+              Indulge in anticipation with our Pre-booked Meals – a culinary
+              journey designed to elevate your dining experience, ensuring a
+              delightful feast awaits you at your destination.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__img-wrapper">
+              <img
+                src="images/info-3.png"
+                alt="Pre-book Baggage"
+                class="info-card__img"
+              />
+            </div>
+            <h3 class="info-card__title">Pre-book Baggage</h3>
+            <p class="info-card__text">
+              Indulge in anticipation with our Pre-booked Meals – a culinary
+              journey designed to elevate your dining experience, ensuring a
+              delightful feast awaits you at your destination.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__img-wrapper">
+              <img
+                src="images/info-4.png"
+                alt="Special Assistance"
+                class="info-card__img"
+              />
+            </div>
+            <h3 class="info-card__title">Special Assistance</h3>
+            <p class="info-card__text">
+              Indulge in anticipation with our Pre-booked Meals – a culinary
+              journey designed to elevate your dining experience, ensuring a
+              delightful feast awaits you at your destination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION — BEST OFFERS
+    ============================================================ -->
+    <section class="offers-section">
+      <div class="section-header">
+        <h2 class="section-title">Best Offers</h2>
+      </div>
+
+      <div class="offers-grid">
+        <!-- COL 1 -->
+        <div class="offers-col">
+          <div class="offer-card">
+            <img src="images/dubai.png" alt="Dubai" class="offer-card__img" />
+            <div class="offer-card__overlay">
+              <a href="#" class="offer-card__book-btn">Book Now</a>
+              <a href="#" class="offer-card__more-link">More Details</a>
+            </div>
+            <div class="offer-card__info">
+              <p class="offer-card__from">Islamabad</p>
+              <p class="offer-card__to">Dubai</p>
+              <p class="offer-card__price">PKR 64,609.00</p>
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="images/Paris - Shanzillizay.png"
+              alt="Paris"
+              class="offer-card__img"
+            />
+            <div class="offer-card__overlay">
+              <a href="#" class="offer-card__book-btn">Book Now</a>
+              <a href="#" class="offer-card__more-link">More Details</a>
+            </div>
+            <div class="offer-card__info">
+              <p class="offer-card__from">Islamabad</p>
+              <p class="offer-card__to">Paris</p>
+              <p class="offer-card__price">PKR 223,979.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COL 2 -->
+        <div class="offers-col offers-col--tall">
+          <div class="offer-card offer-card--tall">
+            <img src="images/YTO.png" alt="Toronto" class="offer-card__img" />
+            <div class="offer-card__overlay">
+              <a href="#" class="offer-card__book-btn">Book Now</a>
+              <a href="#" class="offer-card__more-link">More Details</a>
+            </div>
+            <div class="offer-card__info">
+              <p class="offer-card__from">Islamabad</p>
+              <p class="offer-card__to">Toronto</p>
+              <p class="offer-card__price">PKR 341,324.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COL 3 -->
+        <div class="offers-col">
+          <div class="offer-card">
+            <img
+              src="images/London_BigBen.jpeg"
+              alt="London"
+              class="offer-card__img"
+            />
+            <div class="offer-card__overlay">
+              <a href="#" class="offer-card__book-btn">Book Now</a>
+              <a href="#" class="offer-card__more-link">More Details</a>
+            </div>
+            <div class="offer-card__info">
+              <p class="offer-card__from">Lahore</p>
+              <p class="offer-card__to">London</p>
+              <p class="offer-card__price">PKR 172,309.00</p>
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="images/baku_offers.png"
+              alt="Baku"
+              class="offer-card__img"
+            />
+            <div class="offer-card__overlay">
+              <a href="#" class="offer-card__book-btn">Book Now</a>
+              <a href="#" class="offer-card__more-link">More Details</a>
+            </div>
+            <div class="offer-card__info">
+              <p class="offer-card__from">Lahore</p>
+              <p class="offer-card__to">Baku</p>
+              <p class="offer-card__price">PKR 84,268.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION — IMAGE BANNER WITH TEXT
+    ============================================================ -->
+    <section class="highlight-banner">
+      <div class="highlight-banner__img">
+        <img src="images/piasub.png" alt="Highlight Banner" />
+        <div class="highlight-banner__overlay">
+          <h2 class="highlight-title">A+ Executive Corporate Program</h2>
+          <p class="highlight-text">
+            Our business services offer flexibility and exclusive savings for
+            your company. We provide tailored solutions based on your travel
+            spend to maximize your corporate travel budget. 
+          </p>
+          <a href="#" class="highlight-banner__btn">Become a Member</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION — OUR NEWS (3 cards)
+    ============================================================ -->
+    <section class="news-section">
+      <div class="section-header">
+        <h2 class="section-title">OUR NEWS</h2>
+      </div>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-card__img-wrapper">
+            <img
+              src="images/ISB_MAN_thumbnail.png"
+              alt="Islamabad Manchester"
+              class="news-card__img"
+            />
+            <div class="news-card__play">&#9654;</div>
+          </div>
+          <div class="news-card__body">
+            <h4 class="news-card__title">
+              PIA Reconnects Islamabad & Manchester!
+            </h4>
+            <p class="news-card__text">
+              Pakistan International Airlines (PIA) is set to resume its
+              highly-anticipated Islamabad-to-Manchester route after a five-year
+              hiatus, connecting the capital with the UK's North once again with
+              2 weekly Flights.
+            </p>
+            <a href="#" class="news-card__link">Learn More</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="news-card__img-wrapper">
+            <img src="images/KDU_PIA.png" alt="Skardu" class="news-card__img" />
+            <div class="news-card__play">&#9654;</div>
+          </div>
+          <div class="news-card__body">
+            <h4 class="news-card__title">Unveiling Skardu with PIA</h4>
+            <p class="news-card__text">
+              Discover the enchanting beauty of Skardu, a gem in Pakistan's
+              northern regions, with Pakistan International Airlines (PIA).
+              Nestled in the heart of the Karakoram Range, Skardu offers
+              breathtaking landscapes, from towering mountains to serene lakes.
+            </p>
+            <a href="#" class="news-card__link">Learn More</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="news-card__img-wrapper">
+            <img
+              src="images/DiningVDO.png"
+              alt="Dining"
+              class="news-card__img"
+            />
+            <div class="news-card__play">&#9654;</div>
+          </div>
+          <div class="news-card__body">
+            <h4 class="news-card__title">Dining with Luxury</h4>
+            <p class="news-card__text">
+              Embark on a culinary journey with Pakistan International Airlines
+              (PIA) where every meal is a celebration of taste and tradition.
+              Our dining experience transcends mere sustenance, offering
+              passengers a luxurious blend of flavors from around the world.
+            </p>
+            <a href="#" class="news-card__link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION — BANNER (Newsletter + App)
+    ============================================================ -->
+    <section class="banner-section">
+      <div class="banner-grid">
+        <!-- LEFT — Newsletter -->
+        <div class="banner-card">
+          <img
+            src="images/cloud.png"
+            alt="Mountains"
+            class="banner-card__img"
+          />
+          <div class="banner-card__overlay"></div>
+          <div class="banner-card__body">
+            <h3 class="banner-card__title">
+              Get the latest sales straight to your inbox.
+            </h3>
+            <div class="banner-card__form">
+              <div class="banner-form__group">
+                <label class="banner-form__label">E-mail Address</label>
+                <input
+                  type="email"
+                  class="banner-form__input"
+                  placeholder="abc@xyz.com"
+                />
+              </div>
+              <div class="banner-form__group">
+                <label class="banner-form__label"
+                  >Preferred City of Departure</label
+                >
+                <select class="banner-form__input banner-form__select">
+                  <option value="" disabled selected>Select</option>
+                  <option>Karachi (KHI)</option>
+                  <option>Lahore (LHE)</option>
+                  <option>Islamabad (ISB)</option>
+                  <option>Peshawar (PEW)</option>
+                  <option>Quetta (UET)</option>
+                </select>
+              </div>
+              <button class="banner-form__btn">Sign in</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT — App -->
+        <div class="banner-card banner-card--app">
+          <div class="banner-card__app-body">
+            <div class="banner-card__app-text">
+              <h3 class="banner-card__title">Check out our mobile app</h3>
+              <div class="banner-card__app-btns">
+                <a href="#" class="banner-card__store-btn">
+                  <span class="store-btn__icon">&#63743;</span>
+                  <span class="store-btn__text">
+                    <span class="store-btn__sub">Download on the</span>
+                    <span class="store-btn__name">App Store</span>
+                  </span>
+                </a>
+                <a href="#" class="banner-card__store-btn">
+                  <span class="store-btn__icon store-btn__icon--play"
+                    >&#9654;</span
+                  >
+                  <span class="store-btn__text">
+                    <span class="store-btn__sub">ANDROID APP ON</span>
+                    <span class="store-btn__name">Google play</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="banner-card__phone">
+              <img
+                src="images/iphone.png"
+                alt="PIA App"
+                class="banner-card__phone-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer">
+      <div class="footer__bg">
+        <img src="images/footerstamp.svg" alt="" class="footer__bg-img" />
+      </div>
+
+      <!-- TOP BAR -->
+      <div class="footer__topbar">
+        <div class="container footer__topbar-inner">
+          <div class="footer__topbar-logo">
+            <img
+              src="icons/pia-logo.svg"
+              alt="PIA Logo"
+              class="footer__topbar-logo-img"
+            />
+          </div>
+          <div class="footer__topbar-info">
+            <div class="footer__topbar-item">
+              <span class="footer__topbar-icon">📍</span>
+              <span
+                >PIA Building, Jinnah International Airport,<br />Karachi,
+                75200, Pakistan.</span
+              >
+            </div>
+            <div class="footer__topbar-item">
+              <span class="footer__topbar-icon">📞</span>
+              <span>(+92-21)-111-786-786</span>
+            </div>
+            <div class="footer__topbar-item">
+              <span class="footer__topbar-icon">✉</span>
+              <span>contact@piac.aero</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <!-- SOCIAL ICONS -->
+      <div class="footer__socials-row">
+        <div class="container footer__socials-inner">
+          <a href="#" class="footer__social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <rect
+                x="2"
+                y="2"
+                width="20"
+                height="20"
+                rx="5"
+                ry="5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"
+              />
+              <polygon
+                points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <!-- LINKS GRID -->
+      <div class="container footer__links-section">
+        <div class="footer__links-group">
+          <h4 class="footer__links-title">About Us</h4>
+          <div class="footer__links-cols">
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__link">Vision &amp; Values</a></li>
+              <li><a href="#" class="footer__link">Management</a></li>
+              <li><a href="#" class="footer__link">Careers</a></li>
+              <li><a href="#" class="footer__link">Accessibility Plan</a></li>
+            </ul>
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__link">Press Release</a></li>
+              <li><a href="#" class="footer__link">Tenders</a></li>
+              <li><a href="#" class="footer__link">Bid Reports</a></li>
+              <li><a href="#" class="footer__link">Agent Registrations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__links-group">
+          <h4 class="footer__links-title">Facilities</h4>
+          <div class="footer__links-cols">
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__link">Air Passenger Rights</a></li>
+              <li>
+                <a href="#" class="footer__link">Conditions of Carriage</a>
+              </li>
+              <li><a href="#" class="footer__link">Booking Conditions</a></li>
+              <li>
+                <a href="#" class="footer__link">Traveler's Information</a>
+              </li>
+            </ul>
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__link">Baggage Guide</a></li>
+              <li><a href="#" class="footer__link">Overseas Pakistanis</a></li>
+              <li><a href="#" class="footer__link">Track Your Cargo</a></li>
+              <li><a href="#" class="footer__link">Book Charter</a></li>
+              <li><a href="#" class="footer__link">Digital Check-In</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__links-group">
+          <h4 class="footer__links-title">Help &amp; Contact</h4>
+          <div class="footer__links-cols">
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__link">Help &amp; Contact</a></li>
+              <li><a href="#" class="footer__link">Special Assistance</a></li>
+              <li>
+                <a href="#" class="footer__link">Special Assistance Form</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Frequently Asked Questions</a>
+              </li>
+            </ul>
+            <ul class="footer__links-list">
+              <li><a href="#" class="footer__link">LHR Operation</a></li>
+              <li><a href="#" class="footer__link">Site Map</a></li>
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer__link">Business with PIA</a></li>
+              <li><a href="#" class="footer__link">Feedback</a></li>
+              <li><a href="#" class="footer__link">SIFC</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACK TO TOP -->
+      <div class="footer__arrow-row">
+        <button
+          class="footer__arrow-btn"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          title="Back to top"
+        >
+          &#8595;
+        </button>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="footer__copyright">
+        <p>
+          &copy; 2024. Pakistan International Airlines. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- FLOATING: Wheelchair -->
+    <a href="#" class="float-wheelchair" aria-label="Accessibility">♿</a>
+
+    <!-- FLOATING: Contact Us -->
+    <a href="#" class="float-contact" aria-label="Contact Us"
+      ><span>Contact Us</span></a
+    >
+
+  
+  </body>
+</html>
